@@ -48,7 +48,7 @@ MAIL_GATEWAY=192.168.56.2
 
 #######################################
 # Internal dns routing
-DNS_DOMAIN=vm vm.dev
+DNS_DOMAIN=vm vm.dev t3org.dev t3.dev
 
 #######################################
 # MySQL settings
