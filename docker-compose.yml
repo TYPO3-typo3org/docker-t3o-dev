@@ -14,6 +14,7 @@ main:
     #- postgres
     #- mail
     - solr
+    - rabbitmq
     #- elasticsearch
     #- redis
     #- memcached
@@ -107,6 +108,18 @@ solr:
 #    - storage
 #  env_file:
 #    - docker-env.yml
+
+#######################################
+# RabbitMQ
+#######################################
+rabbitmq:
+  build: docker/rabbitmq/
+  ports:
+    - 15672:15672
+  volumes_from:
+    - storage
+  env_file:
+    - docker-env.yml
 
 #######################################
 # Redis

@@ -83,3 +83,8 @@ EFFECTIVE_GID=1000
 #######################################
 # Default cli user (should be www-data)
 CLI_USER=www-data
+
+#######################################
+# RabbitMQ settings
+RABBITMQ_DEFAULT_USER=user
+RABBITMQ_DEFAULT_PASS=password
